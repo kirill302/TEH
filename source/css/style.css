@@ -814,7 +814,7 @@ body {
 /*page main|*/
 /*intro*/
 img[src="source/images/logo.png"] {
-  width: 100px;
+  max-width: 70px;
 }
 
 .intro {
@@ -984,6 +984,26 @@ img[src="source/images/logo.png"] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__pedestal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro {
+    padding-top: 0;
+  }
+  .intro__item .btn {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 50px;
   }
 }
 
